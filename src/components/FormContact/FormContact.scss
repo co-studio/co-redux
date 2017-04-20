@@ -1,0 +1,98 @@
+@import '../../variables.scss';
+
+$input-active-color: $color-primary;
+$input-inactive-color: $gray-darkest;
+
+.FormContact-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+}
+
+.FormContact-form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  max-width: 750px;
+}
+
+.FormContact-input {
+  margin-top: 5px;
+  padding: $padding-1 10px;
+  font-size: $font-size-base;
+  background: $white;
+  border: none;
+  border-bottom: 4px solid;
+  border-color: $input-inactive-color;
+  outline: none;
+  transition: $hover-transition;
+
+  &:focus {
+    border-color: $input-active-color;
+  }
+}
+
+.FormContact-input-label {
+  display: flex;
+  flex-direction: column;
+  margin: $padding-1/2 0;
+  font-size: $font-size-label;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: $input-inactive-color;
+  transition: $hover-transition;
+
+  &:focus {
+    border-color: $input-active-color;
+  }
+}
+
+.FormContact-input-message {
+  font-size: $font-size-base;
+  resize: none;
+  height: 200px;
+}
+
+.FormContact-form-footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin-top: $padding-1;
+}
+
+.FormContact-submit-btn {
+  font-size: $font-size-label;
+  display: inline-block;
+}
+
+.FormContact-thank-you {
+  flex: 1;
+}
+
+.FormContact-thank-you-header {
+  text-align: left;
+  border: none;
+}
+
+.FormContact-thank-you-body {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+@mixin FormContact-sm() {
+  .FormContact-form {
+    width: 100%;
+  }
+
+  .FormContact-form-footer {
+    flex-direction: column;
+  }
+
+  .FormContact-thank-you {
+    order: 1;
+    margin-top: $padding-1;
+  }
+}

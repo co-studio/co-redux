@@ -1,0 +1,17 @@
+@import '../../variables.scss';
+
+.Paragraph {
+  width: $layout-width-text;
+  margin: $padding-1/2 0;
+  font-size: $font-size-base;
+  font-weight: $font-weight-light;
+  line-height: $font-size-base * 1.5;
+  color: $black;
+  text-align: left;
+}
+
+@mixin Paragraph-mobile() {
+  .Paragraph {
+    width: $layout-width-mobile-text;
+  }
+}

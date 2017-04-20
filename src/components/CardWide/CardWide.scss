@@ -1,0 +1,65 @@
+@import '../../variables.scss';
+
+.CardWide-container {
+  box-sizing: border-box;
+  display: flex;
+  // align-items: center;
+  min-height: 350px;
+  max-height: 500px;
+  width: 100%;
+  // width: 100%;
+  padding: 0 $padding-1;
+  margin: $padding-1 0;
+  text-align: center;
+}
+
+.CardWide-image {
+  border-radius: 100px;
+  height: 200px;
+  width: 200px;
+}
+
+.CardWide-caption {
+  width: 100%;
+}
+
+.CardWide-header {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: $font-weight-medium;
+}
+
+.CardWide-subheader {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: $gray-dark;
+  text-transform: uppercase;
+  font-size: $font-size-label;
+}
+
+.CardWide-description {
+  margin: 0;
+  margin-left: $padding-2;
+  font-weight: $font-weight-light;
+
+  .Paragraph {
+    width: 100%;
+  }
+}
+
+.CardWide-disabled {
+  cursor: not-allowed;
+}
+
+@mixin CardWide-mobile() {
+  .CardWide-container {
+    flex-direction: column;
+    max-height: inherit;
+    width: 100%;
+    padding: 0;
+  }
+
+  .CardWide-description {
+    margin: 0;
+  }
+}

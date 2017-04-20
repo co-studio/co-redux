@@ -1,0 +1,114 @@
+@import './variables.scss';
+
+//
+// Global Styles
+// ==================================================
+// ==================================================
+//
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family-primary, serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: $black;
+  line-height: 1.3;
+  scroll-behavior: smooth;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: lighten($color-primary, 15%); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: lighten($color-primary, 15%); /* Gecko Browsers */
+}
+
+input, textarea {
+  font-family: $font-family-primary;
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+  transition: $hover-transition;
+
+  &:hover {
+    color: darken($color-primary, 15%);
+  }
+}
+
+//
+// Components
+// ==================================================
+// ==================================================
+//
+
+@import './components/Navbar/Navbar.scss';
+@import './components/Footer/Footer.scss';
+@import './components/FooterCTA/FooterCTA.scss';
+@import './components/Button/Button.scss';
+@import './components/Divider/Divider.scss';
+
+//
+// Components: Text
+// ==================================================
+// ==================================================
+//
+
+@import './components/Header/Header.scss';
+@import './components/Header2/Header2.scss';
+@import './components/Header3/Header3.scss';
+@import './components/Paragraph/Paragraph.scss';
+
+//
+// Components: Images
+// ==================================================
+// ==================================================
+//
+
+@import './components/Hero/Hero.scss';
+@import './components/Thumbnail/Thumbnail.scss';
+@import './components/CardUseCase/CardUseCase.scss';
+@import './components/CardAbout/CardAbout.scss';
+@import './components/CardWide/CardWide.scss';
+
+//
+// Components: Forms
+// ==================================================
+// ==================================================
+//
+
+@import './components/FormContact/FormContact.scss';
+@import './components/FormEmail/FormEmail.scss';
+
+//
+// Components: Containers
+// ==================================================
+// ==================================================
+//
+
+@import './components/ContainerPage/ContainerPage.scss';
+@import './components/ContainerSection/ContainerSection.scss';
+@import './components/ContainerRows/ContainerRows.scss';
+@import './pages/ContainerSite/ContainerSite.scss';
+
+//
+// Components: Pages
+// ==================================================
+// ==================================================
+//
+
+@import './pages/Landing/Landing.scss';
+@import './pages/Contact/Contact.scss';
+@import './pages/About/About.scss';
+
+//
+// Media Queries
+// ==================================================
+// ==================================================
+//
+
+@import './styles/media-queries.scss';

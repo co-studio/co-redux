@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.1 (35376) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-down-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-down-arrow" fill="#FFFFFF">
+            <path d="M21.2644358,32.7105573 C21.3158528,32.7769532 21.3720225,32.8408489 21.4329525,32.9017789 L23.0404576,34.509284 C23.8221468,35.2909731 25.0915718,35.2951092 25.8719783,34.5147026 L42.9155771,17.4711039 C43.6900319,16.6966491 43.6935576,15.4229823 42.9101584,14.6395832 L41.3026534,13.0320781 C40.5209642,12.2503889 39.2515392,12.2462529 38.4711327,13.0266594 L24.4702797,27.0275124 L10.4412588,12.9984915 C9.66680404,12.2240367 8.39313731,12.220511 7.60973813,13.0039101 L6.00223305,14.6114152 C5.2205439,15.3931044 5.21640786,16.6625294 5.99681439,17.4429359 L21.2644358,32.7105573 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

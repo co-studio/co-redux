@@ -1,0 +1,40 @@
+@import '../../variables.scss';
+
+.CardUseCase {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  padding: $padding-1;
+  margin: $padding-1;
+}
+
+.CardUseCase-header {
+  margin: $padding-1/2 0;
+}
+.CardUseCase-list {
+  padding: 0;
+  margin: 0;
+}
+
+.CardUseCase-list-item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.CardUseCase-list-item-icon {
+  width: 24px;
+  margin-right: $padding-1/2;
+}
+
+.CardUseCase-list-item-text {
+  margin: $padding-1/4 0;
+}
+
+@mixin CardUseCase-sm() {
+  .CardUseCase {
+    margin: $padding-1 0;
+  }
+}

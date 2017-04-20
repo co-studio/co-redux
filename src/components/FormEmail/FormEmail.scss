@@ -1,0 +1,79 @@
+@import '../../variables.scss';
+
+$input-active-color: $color-primary;
+$input-inactive-color: $gray-darkest;
+
+.FormEmail-form {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding: $padding-1;
+  background: rgba($color-secondary, 0.7);
+  border-radius: $border-radius;
+  text-align: left;
+}
+
+.FormEmail-input {
+  margin-top: 5px;
+  padding: $padding-1 10px;
+  font-size: $font-size-base;
+  background: $white;
+  border: none;
+  border-bottom: 4px solid;
+  border-color: $input-inactive-color;
+  outline: none;
+  transition: $hover-transition;
+
+  &:focus {
+    border-color: $input-active-color;
+  }
+
+}
+
+.FormEmail-input-label {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 96px;
+  margin: $padding-1/2 0;
+  margin-top: 0;
+  font-size: $font-size-label;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: $white;
+  transition: $hover-transition;
+  overflow: hidden;
+
+  &:focus {
+    border-color: $input-active-color;
+  }
+}
+
+.FormEmail-submit-btn {
+  display: inline-block;
+  width: 100% !important;
+  font-size: $font-size-label;
+}
+
+.FormEmail-checkmark {
+  position: absolute;
+  right: 15px;
+  top: 43px;
+  width: 32px;
+  transition: $hover-transition;
+  transform: translateX(0);
+}
+
+.FormEmail-checkmark-hidden {
+  transform: translateX(50px);
+}
+
+@mixin FormEmail-sm() {
+  .FormEmail-form {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    background: none;
+  }
+}

@@ -1,0 +1,15 @@
+@import '../../variables.scss';
+
+.FooterCTA {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 500px;
+  padding: 0 $padding-1;
+  background-color: $color-secondary;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

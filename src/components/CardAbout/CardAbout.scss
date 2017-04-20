@@ -1,0 +1,51 @@
+@import '../../variables.scss';
+
+.CardAbout-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 350px;
+  width: 340px;
+  padding: $padding-1;
+  text-align: center;
+}
+
+.CardAbout-image {
+  border-radius: 100px;
+  height: 200px;
+  width: 200px;
+}
+
+.CardAbout-caption {
+  width: 100%;
+}
+
+.CardAbout-header {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: $font-weight-medium;
+}
+
+.CardAbout-subheader {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: $gray-dark;
+  text-transform: uppercase;
+  font-size: $font-size-label;
+}
+
+.CardAbout-description {
+  margin: 0;
+  font-weight: $font-weight-light;
+}
+
+.CardAbout-disabled {
+  cursor: not-allowed;
+}
+
+@mixin CardAbout-sm() {
+  .CardAbout-container {
+    width: 100%;
+  }
+}

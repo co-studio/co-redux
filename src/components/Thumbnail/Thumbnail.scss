@@ -1,0 +1,35 @@
+@import '../../variables.scss';
+
+.Thumbnail {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  padding: $padding-1;
+  background: $gray-lighter;
+  text-align: center;
+  border-radius: $border-radius;
+  transition: $hover-transition;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: $box-shadow;
+    background: $color-primary;
+  }
+}
+
+.Thumbnail-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Thumbnail-image {
+
+}
+
+@mixin Thumbnail-sm() {
+  .Thumbnail {
+    width: 100%;
+  }
+}

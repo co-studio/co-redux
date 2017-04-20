@@ -1,0 +1,42 @@
+// Containers
+@import '../components/ContainerSection/ContainerSection.scss';
+// Components
+@import '../components/Navbar/Navbar.scss';
+@import '../components/Footer/Footer.scss';
+@import '../components/Hero/Hero.scss';
+@import '../components/Button/Button.scss';
+@import '../components/Thumbnail/Thumbnail.scss';
+@import '../components/FormContact/FormContact.scss';
+@import '../components/FormEmail/FormEmail.scss';
+@import '../components/CardUseCase/CardUseCase.scss';
+@import '../components/CardWide/CardWide.scss';
+@import '../components/Paragraph/Paragraph.scss';
+// Pages
+@import '../pages/Landing/Landing.scss';
+@import '../pages/About/About.scss';
+@import '../pages/Contact/Contact.scss';
+
+// small screen size (sm)
+@media (max-width: 768px) {
+  @include hero-sm();
+  @include navbar-sm();
+  @include footer-sm();
+  @include button-sm();
+  @include Thumbnail-sm();
+  @include FormContact-sm();
+  @include FormEmail-sm();
+  @include CardUseCase-sm();
+  @include CardWide-mobile();
+}
+
+// medium screen size (md)
+@media (max-width: 1045px) {
+  // Containers
+  @include ContainerSection-mobile();
+  // Components
+  @include Paragraph-mobile();
+  // Pages
+  @include Landing-mobile();
+  @include About-mobile();
+  @include Contact-mobile();
+}

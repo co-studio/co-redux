@@ -1,0 +1,23 @@
+@import '../../variables.scss';
+
+.Hero {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  position: relative;
+  min-height: 700px;
+  width: 100%;
+  padding: 0 $padding-1;
+  background-color: $color-dark;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin hero-sm() {
+  .Hero {
+    padding: 0 $padding-1;
+  }
+}

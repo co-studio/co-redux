@@ -1,0 +1,122 @@
+@import '../../variables.scss';
+
+.navbar {
+  box-sizing: border-box;
+  width: 100%;
+  padding: $padding-1/2 $padding-2;
+  position: fixed;
+  left: 0;
+  z-index: 101;
+  background: $color-dark;
+  transition: $hover-transition;
+}
+
+.navbar-no-background {
+  background: rgba($color-dark, 0.5);
+  // background: transparent;
+
+  .nav-item,
+  .nav-mobile-item {
+    // color: $color-dark;
+  }
+}
+
+.nav-logo-container {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.nav-logo {
+  height: 36px;
+}
+
+.nav-item,
+.nav-mobile-item {
+  padding: $padding-1 / 2;
+  color: $gray-light;
+  font-weight: 300;
+  font-size: $font-size-label;
+  text-transform: uppercase;
+  text-decoration: none;
+  float: right;
+  transition: $hover-transition;
+  border-radius: $border-radius;
+  border: 2px transparent solid;
+
+  &:hover {
+    background: $gray-darkest;
+    color: $white;
+  }
+}
+
+.nav-item-btn {
+  border: 2px rgba($color-primary, 0.5) solid;
+  border-radius: $border-radius;
+
+  &:hover {
+    color: $white;
+    background: $color-primary;
+  }
+}
+
+.nav-item-active,
+.nav-mobile-item-active {
+  color: $white;
+}
+
+.nav-menu,
+.nav-mobile {
+  display: none;
+}
+
+@mixin navbar-sm() {
+  .navbar,
+  .nav-mobile {
+    padding: $padding-1;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .nav-menu {
+    display: inline-block;
+    float: right;
+    align-self: flex-end;
+  }
+
+  .nav-menu-icon {
+    height: 32px;
+  }
+
+  .nav-mobile {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: $color-dark;
+    transition: $slide-transition;
+    z-index: 100;
+  }
+
+  .nav-mobile-open-true {
+    transform: translateX(-100%);
+  }
+
+  .nav-mobile-items {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: $padding-2 $padding-1;
+    text-align: center;
+  }
+
+  .nav-mobile-item {
+    font-size: $font-size-Header2;
+  }
+}

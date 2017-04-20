@@ -1,0 +1,22 @@
+@import '../../variables.scss';
+
+.ContainerSection {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: $layout-width;
+  text-align: center;
+
+  &:last-child {
+    margin-bottom: $padding-2;
+  }
+}
+
+@mixin ContainerSection-mobile() {
+  .ContainerSection {
+    width: $layout-width-mobile;
+    padding: 0 $padding-1;
+  }
+}

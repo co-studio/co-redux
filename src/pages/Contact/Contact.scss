@@ -1,0 +1,21 @@
+@import '../../variables.scss';
+
+.Contact-ContainerPage {
+  background: $gray-lighter;
+}
+
+.Contact-Hero {
+  min-height: 450px;
+  background: $color-dark;
+}
+
+.Contact-ContainerSection {
+  margin-top: $padding-2;
+}
+
+@mixin Contact-mobile {
+  .Contact-Hero-img {
+    width: 100%;
+    max-height: 300px;
+  }
+}
